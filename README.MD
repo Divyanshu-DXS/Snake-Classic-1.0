@@ -17,5 +17,6 @@ More on this: Check [StackOverFlow](https://stackoverflow.com/questions/38709923
 6. Try to achieve the highest score possible!
 
 ###
-"Keep calm and hiss on!"
-**_Remember, even the longest snake started as a tiny worm!_**
+"Keep calm and hiss on!"  
+
+## **_Remember, even the longest snake started as a tiny worm!_**
