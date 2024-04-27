@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Wellfleet&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    background: url(./img/BackGround.png);
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:antiquewhite;
+}
+/*
+The measuring unit used here is fr, which stands for "fractional unit". It's a flexible unit that distributes the available space in the grid container among the rows or columns according to their proportions. In this case, each row will take up an equal fraction of the available space.
+
+Alternative values or parameters that can be passed to grid-template-rows include:
+
+Lengths (e.g., px, em, rem): You can specify fixed lengths for rows, such as grid-template-rows: 100px 200px 50px;.
+Percentages (%): You can specify row heights as percentages of the container's height, such as grid-template-rows: 20% 30% 50%;.
+auto: This value automatically sizes rows based on their content.
+min-content, max-content: These values size rows based on the minimum or maximum content size within them.
+fr: Fractional units, as used in the example, distribute space evenly among rows/columns.
+*/
+#board{
+    background: linear-gradient(#191915, #181816);
+    opacity: 88%;
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+    
+}
+
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: "Wellfleet", monospace;
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 59px;
+    right: 140px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: "Wellfleet", monospace;
+}
+
+
+.head{
+    /* background-color: #DAA520; */
+    background: linear-gradient(#ea1a1a, #DAA520);
+    border: 2px solid rgb(34, 4, 34); 
+    transform: scale(1.02);
+    border-radius: 20px;
+}
+
+.snake{
+    background-color: #efb216;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+.food{
+    background: linear-gradient(red, purple);
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
